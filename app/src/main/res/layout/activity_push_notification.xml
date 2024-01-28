@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEB3B"
+    tools:context=".firebasePushNotification.PushNotification">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:layout_alignParentTop="true"
+        android:textSize="20sp"
+        android:background="@color/teal_200"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:id="@+id/et_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Title"
+        android:textSize="25sp"
+        android:background="@color/buttonLabel"
+        android:layout_below="@+id/tv_title"
+        android:layout_margin="@dimen/small_padding"/>
+
+    <TextView
+        android:id="@+id/tv_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Message"
+        android:textSize="20sp"
+        android:background="@color/teal_200"
+        android:layout_below="@id/et_title"
+        android:layout_margin="@dimen/small_padding"/>
+
+    <EditText
+        android:id="@+id/et_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Message"
+        android:textSize="25sp"
+        android:background="@color/buttonLabel"
+        android:layout_below="@+id/tv_msg"
+        android:layout_margin="@dimen/small_padding"/>
+
+    <EditText
+        android:id="@+id/et_token"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter User Token"
+        android:textSize="25sp"
+        android:background="@color/buttonLabel"
+        android:layout_margin="@dimen/small_padding"
+        android:layout_below="@id/et_msg"/>
+
+    <Button
+        android:id="@+id/btn_sendAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send to All"
+        android:textSize="25sp"
+        android:layout_above="@+id/btn_sendUser"
+        android:background="@color/teal_700"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/big_padding"
+        />
+
+    <Button
+        android:id="@+id/btn_sendUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send to User"
+        android:textSize="25sp"
+        android:background="@color/teal_700"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/big_padding"/>
+
+
+</RelativeLayout>
